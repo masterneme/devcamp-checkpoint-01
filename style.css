@@ -1,0 +1,87 @@
+html {
+    --grey-color: #f7f7f7;
+}
+
+.spacer {
+    height: 1em;
+}
+
+.gridOne {
+    background-color: var(--grey-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gridTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.gridTwo > .child2One {
+    background-color: red;
+}
+
+.gridTwo > .child2Two {
+    background-color: blue;
+}
+
+.gridTwo > .child2Three {
+    background-color: yellow;
+}
+
+.gridThree {
+    background-color: var(--grey-color);
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    width: 500px;
+    height: 300px;
+}
+
+.gridThree > .child3Two > img {
+    width: 500px;
+    height: 225px;
+    object-fit: cover;
+}
+
+.gridFour {
+    background-color: green;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 500px;
+}
+
+.gridFour > #nestedGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gridFive {
+    background-color: var(--grey-color);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 500px;
+}
+
+.gridFive > .child5Two {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.gridFive > .child5Two > img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gridSix {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 500px;
+}
+
+.gridSix > p {
+    font-family: "Dancing Script", cursive;
+    font-weight: 900;
+    text-transform: uppercase;
+}
